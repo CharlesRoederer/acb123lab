@@ -15,11 +15,13 @@ public class SimpleIOMath {
      */
     public  void promptUser()    {
         Scanner in= new Scanner(System.in);
-        System.out.print("Enter your name:" );
+        System.out.println("Sit yourself down, take a seat");
+        System.out.println("All you gotta do is repeat after me");
+        System.out.print("Enter your name: " );
         name= in.nextLine();
-        System.out.print("Enter your age:" );
+        System.out.print("Enter your age: " );
         age= in.nextInt();
-        System.out.print("Enter your favorite number:" );
+        System.out.print("Enter your favorite number: " );
         favNumber= in.nextInt();
     }
 
@@ -34,10 +36,11 @@ public class SimpleIOMath {
                 "Are the branches of the learning tree");
         System.out.println("Your name is: " + name );
         System.out.println("Your age is: " + age);
-        System.out.println("Your favorite number is: " + favNumber);
         System.out.println("At your next birthday, you will turn " + (age +1) + ".");
-        System.out.println("The first prime factor of " + age + " is "+ smallestPrimeFactor(age) +".");
-        System.out.println("Your favorite number squared is: "+ (favNumber^2));
+        System.out.println("The first prime factor of " + age + " is: "+ smallestPrimeFactor(age) +".");
+        System.out.println("Your favorite number is: " + favNumber);
+        System.out.println("Your favorite number squared is: "+ (favNumber*favNumber));
+        System.out.println("* end of program *");
     }
 
     private boolean isPrime(int num) {
@@ -65,8 +68,8 @@ public class SimpleIOMath {
      */
     public static void main(String[] args)  {
         SimpleIOMath app = new SimpleIOMath();
-        System.out.println("Sit yourself down, take a seat");
-        System.out.println("All you gotta do is repeat after me");
+        //System.out.println("Sit yourself down, take a seat");
+        //        System.out.println("All you gotta do is repeat after me");
         app.promptUser();
         app.printInfo();
     }
