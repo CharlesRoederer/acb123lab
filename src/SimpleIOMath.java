@@ -9,6 +9,7 @@ public class SimpleIOMath {
     private String name;
     private int age;
     private int favNumber;
+    private String favShow;
 
     /**
      * prompt user  for input
@@ -23,6 +24,9 @@ public class SimpleIOMath {
         age= in.nextInt();
         System.out.print("Enter your favorite number: " );
         favNumber= in.nextInt();
+        in.nextLine();  // flush here
+        System.out.print("Enter your favorite show: " );
+        favShow= in.nextLine();
     }
 
     /**
@@ -40,6 +44,7 @@ public class SimpleIOMath {
         System.out.println("The first prime factor of " + age + " is: "+ smallestPrimeFactor(age) +".");
         System.out.println("Your favorite number is: " + favNumber);
         System.out.println("Your favorite number squared is: "+ (favNumber*favNumber));
+        System.out.println(favShow + " is an amazing show. ");
         System.out.println("* end of program *");
     }
 
